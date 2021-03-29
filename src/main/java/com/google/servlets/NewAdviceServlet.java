@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.jsoup.Jsoup;
 import org.jsoup.safety.Whitelist;
 
-/** Servlet responsible for creating new advice. */
+/** Servlet responsible for creating new advice */
 @WebServlet("/new-advice")
 public class NewTaskServlet extends HttpServlet {
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();

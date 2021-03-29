@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
   $("#form").on("submit", function() {
-    //assume the form is valid by default
+    // assume the form is valid by default
     var valid = true;
 
-    //username validation
+    // username validation
     if ( $("#username").prop("validity").valid ) {
       $("#username_error").addClass("hidden");
     } else {
@@ -12,7 +12,7 @@ $(document).ready(function () {
       valid = false;
     }
 
-    //university validation
+    // university validation
     if ( $("#university").prop("validity").valid ) {
       $("#university_error").addClass("hidden");
     } else {
@@ -20,7 +20,7 @@ $(document).ready(function () {
       valid = false;
     }
 
-    //major validation
+    // major validation
     if ( $("#major").prop("validity").valid ) {
       $("#major_error").addClass("hidden");
     } else {
@@ -28,7 +28,7 @@ $(document).ready(function () {
       valid = false;
     }
 
-    //grade validation
+    // grade validation
     if ( $("#freshman").is(':checked')
     || $("#sophomore").is(':checked')
     || $("#junior").is(':checked')
