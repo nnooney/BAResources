@@ -41,17 +41,17 @@
                 <h2>Send A Message To Fellow Students!</h2>
             <!-- </div> -->
 
-            <span class="error_message hidden" id="username_error">
+            <span class="error_message" id="username_error">
             Please enter your username.
             </span>
             </br>
 
             <label for="user-name">Username:</label>
-            <input type="text" id="user-name" name="user-name" required/>
+            <input type="text" id="user-name" name="user-name" value="user-name" required/>
             </br>
             </br>
 
-            <span class="error_message hidden" id="university_error">
+            <span class="error_message " id="university_error">
             Please enter your university.
             </span>
             </br>
@@ -61,7 +61,7 @@
             </br>
             </br>
 
-            <span class="error_message hidden" id="major_error">
+            <span class="error_message " id="major_error">
             Please enter your major.
             </span>
             </br>
@@ -71,7 +71,7 @@
             </br>
             </br>
 
-            <span class="error_message hidden" id="grade_error">
+            <span class="error_message " id="grade_error">
             Please enter your grade year.
             </span>
             </br>
@@ -101,7 +101,7 @@
             </div>
             </br>
             
-            <span class="error_message hidden" id="advice_error">
+            <span class="error_message " id="advice_error">
             Please enter a comment, question, and/or advice.
             </span>
             </br>
@@ -110,7 +110,7 @@
             <textarea name="advice" rows="4" cols="50" required> </textarea>
             </br>
             </br>
-            <button type="submit" class="submit">Submit</button>
+            <button type="submit" class="submit" onclick="show(); return false">Submit</button>
         <form>
             </br>
             </br>
