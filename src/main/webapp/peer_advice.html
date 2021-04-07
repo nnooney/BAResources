@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peer Advice</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="scripts/peer-advice-validation.js" type="text/javascript"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="nav"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Peer Advice</a></li>
+                <li><a href="#">Academic Advising</a></li>
+                <li><a href="#">Health</a></li>            
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+    </div> 
+
+    <div class="peer-form">
+
+        <form id="peer-form" method="post" action="#">
+            <div class="peer-title">
+                <h2>Send A Message To Fellow Students!</h2>
+            </div>
+
+            <span class="error_message hidden" id="username_error">
+            Please enter your username.
+            </span>
+            </br>
+
+            <label for="user-name">Username:</label>
+            <input type="text" id="user-name" name="user-name" required/>
+            </br>
+            </br>
+
+            <span class="error_message hidden" id="university_error">
+            Please enter your university.
+            </span>
+            </br>
+
+            <label for="university">University:</label>
+            <input type="text" id="university" name="university" required/>
+            </br>
+            </br>
+
+            <span class="error_message hidden" id="major_error">
+            Please enter your major.
+            </span>
+            </br>
+
+            <label for="major">Major:</label>
+            <input type="text" id="major" name="major" required/>
+            </br>
+            </br>
+
+            <span class="error_message hidden" id="grade_error">
+            Please enter your grade year.
+            </span>
+            </br>
+
+            <label>What grade are you in?</label>
+            <div class="flex_radio">
+
+                <div class="radio_option">
+                <input type="radio" id="freshman" name="grade" value="freshman" required/>
+                <label for="freshman">Freshman</label>
+                </div>
+
+                <div class="radio_option">
+                <input type="radio" id="sophomore" name="grade" value="sophomore" />
+                <label for="sophomore">Sophomore</label>
+                </div>
+
+                <div class="radio_option">
+                <input type="radio" id="junior" name="grade" value="junior" />
+                <label for="junior">Junior</label>
+                </div>
+
+                <div class="radio_option">
+                <input type="radio" id="senior" name="grade" value="senior" />
+                <label for="senior">Senior</label>
+                </div>
+            <div>
+            </br>
+            
+            <span class="error_message hidden" id="advice_error">
+            Please enter a comment, question, and/or advice.
+            </span>
+            </br>
+
+            <label for="advice">Drop any Advice/Question/Comment:</label>
+            <textarea name="advice" rows="4" cols="50" required> </textarea>
+            </br>
+            </br>
+            <button type="submit">Submit</button>
+        <form>
+    </div>
+
+</body>
+</html>
