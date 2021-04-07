@@ -11,25 +11,6 @@ body {
 
 }
 
-.nav {
-    margin-right:360px;
-}
-
-nav ul {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    padding: 0px;
-    text-align: left;
-
-}
-
-nav li {
-    display: inline-block;
-    flex-direction: row;
-}
-
 .error_message {
   display: inline-flex;
   flex-direction: row;

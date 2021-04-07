@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $("#form").on("submit", function() {
+  $("#peer-form").on("submit", function() {
     // assume the form is valid by default
     var valid = true;
 
@@ -50,4 +50,14 @@ $(document).ready(function () {
 
      return valid;
     });
+
+    // const form = document.getElementById('peer-advice');
+
+    // form.addEventListener('focusin', (event) => {
+    // event.target.style.background = 'pink';
+    // });
+
+    // form.addEventListener('focusout', (event) => {
+    // event.target.style.background = '';
+    // });
   });
