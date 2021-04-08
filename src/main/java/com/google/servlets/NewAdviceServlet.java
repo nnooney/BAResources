@@ -1,4 +1,4 @@
-package com.google.sps.servlets;
+package com.google.servlets;
 
 import com.google.cloud.datastore.Datastore;
 import com.google.cloud.datastore.DatastoreOptions;
