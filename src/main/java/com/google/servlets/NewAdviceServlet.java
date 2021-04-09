@@ -15,7 +15,7 @@ import org.jsoup.safety.Whitelist;
 
 /** Servlet responsible for creating new advice */
 @WebServlet("/new-advice")
-public class NewTaskServlet extends HttpServlet {
+public class NewAdviceServlet extends HttpServlet {
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
 }
 
