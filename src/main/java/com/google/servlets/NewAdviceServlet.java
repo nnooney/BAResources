@@ -1,4 +1,4 @@
-package com.google.sps.servlets;
+package com.google.servlets;
 
 import com.google.cloud.datastore.Datastore;
 import com.google.cloud.datastore.DatastoreOptions;
@@ -15,7 +15,7 @@ import org.jsoup.safety.Whitelist;
 
 /** Servlet responsible for creating new advice */
 @WebServlet("/new-advice")
-public class NewTaskServlet extends HttpServlet {
+public class NewAdviceServlet extends HttpServlet {
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
 }
 
