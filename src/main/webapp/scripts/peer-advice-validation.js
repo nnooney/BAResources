@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $("#peer-form").on("submit", function() {
+  $("#peer-form").on("submit", function(e) {
     // assume the form is valid by default
     var valid = true;
 
@@ -47,8 +47,11 @@ $(document).ready(function () {
       $("#advice_error").removeClass("hidden");
       valid = false;
     }
+    if (valid == false) {
+        e.preventDefault();
+    }
 
-     return valid;
+    return valid;
     });
 
     // const form = document.getElementById('peer-advice');
