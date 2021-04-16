@@ -3,9 +3,9 @@ $(document).ready(function () {
   $("#peer-form").on("submit", function(e) {
     // assume the form is valid by default
     var valid = true;
-
+    
     // username validation
-    if ( $("#username").prop("validity").valid ) {
+    if ( $("#user-name").prop("validity").valid ) {
       $("#username_error").addClass("hidden");
     } else {
       $("#username_error").removeClass("hidden");
@@ -52,15 +52,7 @@ $(document).ready(function () {
     }
 
     return valid;
+
+    
     });
-
-    // const form = document.getElementById('peer-advice');
-
-    // form.addEventListener('focusin', (event) => {
-    // event.target.style.background = 'pink';
-    // });
-
-    // form.addEventListener('focusout', (event) => {
-    // event.target.style.background = '';
-    // });
   });
