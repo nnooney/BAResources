@@ -3,45 +3,54 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Peer Advice</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="scripts/peer-advice-validation.js" type="text/javascript"></script>
-    <script src="scripts/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {font-family: "Times New Roman", Georgia, Serif;}
+    h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    }
+    </style>
 </head>
 
-<body>
-    <div class="nav"></div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Peer Advice</a></li>
-                <li><a href="#">Academic Advising</a></li>
-                <li><a href="#">Health</a></li>            
-                <li><a href="#">Events</a></li>
-            </ul>
-        </nav>
-    </div> 
+<body class="w3-light-grey">
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="Home.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+            <a href="peer-advice.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Peer Advice</a>
+            <a href="Advising.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Academic Advising</a>
+            <a href="Health.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Health</a>
+            <a href="Events.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Events</a>
+        </div>
+    </div>
 
     <div class="peer-form">
 
-        <form id="peer-form" method="post" action="#">
-            <div class="peer-title">
+        <form id="peer-form" method="POST" action="display.html" novalidate>
+            <!-- <div class="peer-title"> -->
                 <h2>Send A Message To Fellow Students!</h2>
-            </div>
+            <!-- </div> -->
 
-            <span class="error_message hidden" id="username_error">
+            <span class="error_message" id="username_error">
             Please enter your username.
             </span>
             </br>
 
             <label for="user-name">Username:</label>
-            <input type="text" id="user-name" name="user-name" required/>
+            <input type="text" id="user-name" name="user-name" value="user-name" required/>
             </br>
             </br>
 
-            <span class="error_message hidden" id="university_error">
+            <span class="error_message " id="university_error">
             Please enter your university.
             </span>
             </br>
@@ -51,7 +60,7 @@
             </br>
             </br>
 
-            <span class="error_message hidden" id="major_error">
+            <span class="error_message " id="major_error">
             Please enter your major.
             </span>
             </br>
@@ -61,7 +70,7 @@
             </br>
             </br>
 
-            <span class="error_message hidden" id="grade_error">
+            <span class="error_message " id="grade_error">
             Please enter your grade year.
             </span>
             </br>
@@ -88,21 +97,45 @@
                 <input type="radio" id="senior" name="grade" value="senior" />
                 <label for="senior">Senior</label>
                 </div>
-            <div>
+            </div>
             </br>
             
-            <span class="error_message hidden" id="advice_error">
+            <span class="error_message " id="advice_error">
             Please enter a comment, question, and/or advice.
             </span>
             </br>
 
-            <label for="advice">Drop any Advice/Question/Comment:</label>
+            <label for="advice">Drop any Advice/Question/Comment:</label></br>
             <textarea name="advice" rows="4" cols="50" required> </textarea>
             </br>
             </br>
-            <button type="submit">Submit</button>
+            <button type="submit" class="submit" onclick="show(); return false">Submit</button>
         <form>
+            </br>
+            </br>
+            <h3>View past advice posts <a href="display.html">here</a>.</h3>
     </div>
 
+    
+        <!-- <script>
+            function submitForm(){
+                if(typeof(localStorage) != "undefined"){
+                    localStorage.name = document.getElementById("user-name").value;
+                }
+                document.getElementById("peer-advice").submit();
+            }
+            
+        </script>     -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <div class="w3-xlarge w3-padding-32">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
 </body>
 </html>
